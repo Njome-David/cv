@@ -1,0 +1,202 @@
+%% CV – Njome David (English version)
+%% Compiler : xelatex or pdflatex
+\documentclass[10pt, a4paper]{article}
+
+% ── Packages ────────────────────────────────────────────────────────────────
+\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+% ── Colors ──────────────────────────────────────────────────────────────────
+\definecolor{navyblue}{HTML}{1F4E79}
+\definecolor{darkgray}{HTML}{595959}
+\definecolor{lightgray}{HTML}{F2F2F2}
+
+% ── Hyperlinks ───────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=navyblue,
+  linkcolor=navyblue
+}
+
+% ── No page number ───────────────────────────────────────────────────────────
+\pagestyle{empty}
+
+% ── Section style ────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{navyblue}}
+  {}{0em}
+  {}
+  [\vspace{-6pt}\textcolor{navyblue}{\rule{\linewidth}{1.2pt}}\vspace{2pt}]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+% ── List style ───────────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=2pt,
+  label={\textcolor{navyblue}{\textbullet}}
+}
+
+% ── Entry command: Title \hfill Meta ────────────────────────────────────────
+\newcommand{\entryhead}[2]{%
+  \noindent\textbf{#1}\hfill{\small\textit{\textcolor{darkgray}{#2}}}\\[-4pt]%
+}
+
+\newcommand{\entrysub}[1]{%
+  {\small\textit{\textcolor{darkgray}{#1}}}\\[2pt]%
+}
+
+% ── Bold inline label ────────────────────────────────────────────────────────
+\newcommand{\blabel}[1]{\textbf{#1}\ }
+
+% ═══════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═══════════════════════════════════════════════════════════════════════════
+
+% ── HEADER ──────────────────────────────────────────────────────────────────
+{\LARGE\bfseries\color{navyblue} NJOME DAVID}\\[4pt]
+{\small\textcolor{darkgray}{%
+  Melen, Yaoundé\quad|\quad
+  \href{mailto:njomedavid26@gmail.com}{njomedavid26@gmail.com}\quad|\quad
+  +237 671 711 462\quad|\quad
+  \href{https://www.linkedin.com/in/njome-david-002a11213}{linkedin.com/in/njome-david-002a11213}\quad|\quad
+  \href{https://github.com/Njome-David}{github.com/Njome-David}
+}}
+
+\vspace{4pt}
+\textcolor{navyblue}{\rule{\linewidth}{1.8pt}}
+\vspace{2pt}
+
+% ── PERSONAL PROFILE ────────────────────────────────────────────────────────
+\section{Personal Profile}
+
+Third-year Computer Engineering student with hands-on experience across full-stack development,
+databases, and networking, seeking an internship where I can apply and deepen my technical skills
+in a demanding, real-world environment.
+
+% ── EDUCATION ───────────────────────────────────────────────────────────────
+\section{Education}
+
+\entryhead{National Advanced School of Engineering Yaoundé — Computer Engineering}{09/2023 -- Present}
+\entrysub{Yaoundé, Cameroon}
+\begin{itemize}
+  \item \blabel{Grade:} Very Good
+  \item \blabel{Algorithmic:} Studied core data structures (trees, graphs, hash tables) and
+        algorithms including sorting, searching, and dynamic programming. Developed analytical
+        skills through complexity analysis (Big~O) to design optimised computational solutions.
+  \item \blabel{Information Systems Conception:} Modelled structured, scalable information systems
+        using Merise (MCD/MLD) and UML diagrams. Applied database design principles including
+        normalisation to produce well-architected relational schemas ready for implementation.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Laval Bilingual College — General Secondary Education}{09/2016 -- 07/2023}
+\entrysub{Douala, Cameroon}
+\begin{itemize}
+  \item Ranked \textbf{8th nationwide} at the GCE A-Level —
+        Maths~A*, Physics~A*, ICT~A*, Further Maths~A*, Chemistry~A*
+\end{itemize}
+
+% ── PROJECTS ────────────────────────────────────────────────────────────────
+\section{University / Personal Projects}
+
+\entryhead{CROSS Authentication App \normalfont\small— Group Project (Leader)}{2025}
+\begin{itemize}
+  \item Platform enabling authorities to authenticate official documents using the CROSS Signature
+        Scheme (Post-Quantum Cryptography).
+  \item \blabel{Skills applied:} Project Management, Technical Documentation, Python.
+  \item Led a team of 6 to design and deliver a fully functional post-quantum authentication
+        platform within a 7-week timeline.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Illustrative Printing Room \normalfont\small- Individual Project}{2025}
+\begin{itemize}
+  \item OS-level simulation of a shared printing room where concurrent users with varying
+        priorities, page counts, and print types compete for limited printers — demonstrating
+        concurrency and synchronisation principles.
+  \item \blabel{Skills applied:} Concurrency \& synchronisation, scheduling algorithm design,
+        performance analysis, C~programming.
+  \item Designed and benchmarked an original priority scheduling algorithm against FIFO and SJF
+        across average waiting time, turnaround time, and starvation rate — achieving measurably
+        better fairness outcomes.
+\end{itemize}
+
+% ── SKILLS ──────────────────────────────────────────────────────────────────
+\section{Skills}
+
+\vspace{2pt}
+\noindent
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{4.8cm} X @{}}
+  Programming
+    & Python, Java, C/C++, HTML/CSS, JavaScript, GitHub, \LaTeX \\[3pt]
+  Full-Stack Development
+    & Next.js, React, Laravel, Spring Boot, PostgreSQL, MySQL \\[3pt]
+  System Design \& Modelling
+    & Merise, UML, database normalisation, requirements analysis \\[3pt]
+  Leadership \& Project Management
+    & Team coordination, sprint delivery, repeated group leadership \\[3pt]
+  Mathematical Reasoning
+    & Complexity analysis, discrete mathematics, algorithm design \\[3pt]
+  Communication
+    & Technical documentation, public speaking, cross-functional reporting \\
+\end{tabularx}
+
+% ── LANGUAGES ────────────────────────────────────────────────────────────────
+\section{Languages}
+
+\vspace{2pt}
+\noindent
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{4.8cm} X @{}}
+  French   & Fluent \\[3pt]
+  English  & Fluent \\[3pt]
+  Spanish  & Notions \\[3pt]
+  German   & Notions \\
+\end{tabularx}
+
+% ── CERTIFICATIONS & AWARDS ──────────────────────────────────────────────────
+\section{Certifications \& Awards}
+
+\begin{itemize}
+  \item Earned national certification in
+        \textbf{Microsoft Excel 2016}, placing \textbf{1st in Cameroon} and
+        qualifying to represent Cameroon at the World Skills Championship (2021 \& 2022).
+  \item \textbf{MAPLE Seminar} — NASEY OPTICA Chapter (Optica / OSA), ENSPY:\\
+        \textit{2\textsuperscript{nd} Edition} (Feb.--Apr. 2025): awarded \textbf{Best Student Prize},
+        ranking 1\textsuperscript{st} in the summative evaluation.\\
+        \textit{3\textsuperscript{rd} Edition} (Feb.--Apr. 2026): returned as
+        \textbf{Assistant Trainer \& Organizer}.
+\end{itemize}
+
+% ── EXTRACURRICULAR ACTIVITIES ───────────────────────────────────────────────
+\section{Extracurricular Activities}
+
+\begin{itemize}
+  \item Served as \textbf{Junior Deputy of Cameroon to the United Nations}, representing national
+        youth through diplomatic engagements, public speaking, interviews with political figures,
+        and structured debates on the SDGs and broader UN development goals.
+  \item Active member of the \textbf{GI Club ENSPY} project cell, contributing to collaborative
+        engineering initiatives within the Computer Engineering department.
+  \item Basketball player and team-based gaming enthusiast — strong appreciation for
+        strategy, collaboration, and competition.
+\end{itemize}
+
+% ── REFERENCES ──────────────────────────────────────────────────────────────
+\section{References}
+
+\textit{\textcolor{darkgray}{Available upon request.}}
+
+\end{document}
