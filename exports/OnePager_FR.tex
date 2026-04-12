@@ -1,0 +1,167 @@
+%% CV – Njome David (Export FR – One-pager)
+%% Compiler : pdflatex
+\documentclass[10pt, a4paper]{article}
+
+% ── Packages ────────────────────────────────────────────────────────────────
+\usepackage[a4paper, top=0.75cm, bottom=0.75cm, left=1.3cm, right=1.3cm]{geometry}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% ── Colors ──────────────────────────────────────────────────────────────────
+\definecolor{navyblue}{HTML}{1F4E79}
+\definecolor{darkgray}{HTML}{595959}
+
+% ── Hyperlinks ───────────────────────────────────────────────────────────────
+\hypersetup{colorlinks=true, urlcolor=navyblue, linkcolor=navyblue}
+
+% ── No page number ───────────────────────────────────────────────────────────
+\pagestyle{empty}
+
+% ── Section style ────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{navyblue}}
+  {}{0em}{}
+  [\vspace{-6pt}\textcolor{navyblue}{\rule{\linewidth}{1.2pt}}\vspace{2pt}]
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+% ── List style ───────────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=1pt,
+  label={\textcolor{navyblue}{\textbullet}}
+}
+
+% ── Entry commands ───────────────────────────────────────────────────────────
+\newcommand{\entryhead}[2]{%
+  \noindent\textbf{#1}\hfill{\small\textit{\textcolor{darkgray}{#2}}}\\[-4pt]%
+}
+\newcommand{\entrysub}[1]{%
+  {\small\textit{\textcolor{darkgray}{#1}}}\\[2pt]%
+}
+\newcommand{\blabel}[1]{\textbf{#1}\ }
+
+% ═══════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═══════════════════════════════════════════════════════════════════════════
+
+% ── HEADER ──────────────────────────────────────────────────────────────────
+{\LARGE\bfseries\color{navyblue} NJOME DAVID}\\[4pt]
+{\small\textcolor{darkgray}{%
+  Melen, Yaoundé\quad|\quad
+  \href{mailto:njomedavid26@gmail.com}{njomedavid26@gmail.com}\quad|\quad
+  +237 671 711 462\quad|\quad
+  \href{https://www.linkedin.com/in/njome-david-002a11213}{linkedin.com/in/njome-david-002a11213}\quad|\quad
+  \href{https://github.com/Njome-David}{github.com/Njome-David}
+}}
+
+\vspace{4pt}
+\textcolor{navyblue}{\rule{\linewidth}{1.8pt}}
+\vspace{2pt}
+
+% ── PERSONAL PROFILE ────────────────────────────────────────────────────────
+\section{Personal Profile}
+
+Étudiant en troisième année de Génie Informatique, avec une expérience pratique en développement
+full-stack, bases de données et réseaux, à la recherche d'un stage afin d'approfondir et d'appliquer
+mes compétences techniques dans un environnement professionnel exigeant.
+
+% ── EDUCATION ───────────────────────────────────────────────────────────────
+\section{Education}
+
+\entryhead{École Nationale Supérieure Polytechnique de Yaoundé — Génie Informatique}{09/2023 -- Présent}
+\entrysub{Yaoundé, Cameroun}
+\begin{itemize}
+  \item \blabel{Mention :} Très Bien
+  \item \blabel{Algorithmique :} Structures de données, algorithmes de tri/recherche, programmation
+        dynamique et analyse de complexité (Grand~O).
+  \item \blabel{Conception des SI :} Modélisation Merise (MCD/MLD) et UML, normalisation de bases
+        de données relationnelles.
+\end{itemize}
+
+\entryhead{Collège Bilingue de Laval — Enseignement Secondaire Général}{09/2016 -- 07/2023}
+\entrysub{Douala, Cameroun}
+\begin{itemize}
+  \item Classé \textbf{8\textsuperscript{e} à l'échelle nationale} au GCE A-Level —
+        Mathématiques~A*, Physique~A*, Informatique~A*, Mathématiques Approfondies~A*, Chimie~A*
+\end{itemize}
+
+% ── PROJECTS ────────────────────────────────────────────────────────────────
+\section{Projects}
+
+\entryhead{Application CROSS Authentication \normalfont\small— Projet de Groupe (Chef de projet)}{2025}
+\begin{itemize}
+  \item Plateforme d'authentification de documents officiels par cryptographie post-quantique
+        (schéma de signature CROSS) — pilotage d'une équipe de 6 personnes sur 7 semaines,
+        de la conception à la livraison.
+\end{itemize}
+
+\entryhead{Salle d'Impression Illustrée \normalfont\small— Projet Individuel}{2025}
+\begin{itemize}
+  \item Simulation système en C d'une salle d'impression concurrente — conception d'un
+        ordonnanceur par priorité original et comparaison expérimentale face aux algorithmes
+        FIFO et SJF sur des métriques de temps d'attente et d'équité.
+\end{itemize}
+
+% ── SKILLS ──────────────────────────────────────────────────────────────────
+\section{Skills}
+
+\vspace{2pt}
+\noindent
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{5.4cm} X @{}}
+  Programming
+    & Python, Java, C/C++, HTML/CSS, JavaScript, GitHub, \LaTeX \\[1pt]
+  System Design \& Modelling
+    & Merise, UML, normalisation de bases de données, analyse des besoins \\[1pt]
+  Leadership \& Project Management
+    & Coordination d'équipe, livraison par sprints, chef de groupe récurrent \\[1pt]
+  Mathematical Reasoning
+    & Analyse de complexité, mathématiques discrètes, conception d'algorithmes \\
+\end{tabularx}
+
+% ── LANGUAGES ────────────────────────────────────────────────────────────────
+\section{Languages}
+
+\noindent\textbf{Français} — Courant\quad|\quad\textbf{Anglais} — Courant\quad|\quad\textbf{Espagnol} — Notions\quad|\quad\textbf{Allemand} — Notions
+
+% ── CERTIFICATIONS ───────────────────────────────────────────────────────────
+\section{Certifications}
+
+\begin{itemize}
+  \item Certification nationale \textbf{Microsoft Excel 2016} — classé \textbf{1\textsuperscript{er}
+        au Cameroun}, qualifié pour représenter le pays au Championnat du Monde des Métiers
+        (2021 et 2022).
+  \item \textbf{Séminaire MAPLE} (NASEY OPTICA Chapter / Optica, ENSPY) —
+        \textit{2\textsuperscript{e} Éd.} (2025) : \textbf{Prix du Meilleur Étudiant} ;
+        \textit{3\textsuperscript{e} Éd.} (2026) : \textbf{Formateur Assistant et Organisateur}.
+\end{itemize}
+
+% ── EXTRACURRICULAR ACTIVITIES ───────────────────────────────────────────────
+\section{Extracurricular Activities}
+
+\begin{itemize}
+  \item \textbf{Député Junior du Cameroun auprès des Nations Unies} — représentation de la
+        jeunesse nationale à travers des engagements diplomatiques, prises de parole en public
+        et débats structurés sur les ODD.
+  \item Membre actif de la cellule projets du \textbf{Club GI ENSPY}.
+  \item Joueur de basketball et passionné de jeux vidéo en équipe — sens de la stratégie,
+        de la collaboration et de la compétition.
+\end{itemize}
+
+% ── REFERENCES ──────────────────────────────────────────────────────────────
+\section{References}
+
+\textit{\textcolor{darkgray}{Disponibles sur demande.}}
+
+\end{document}
