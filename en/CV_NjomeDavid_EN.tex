@@ -1,8 +1,8 @@
-%% CV – Njome David (English version)
+%% CV - Njome David (English version - MASTER / goldmine, not for direct one-page export)
 %% Compiler : xelatex or pdflatex
 \documentclass[10pt, a4paper]{article}
 
-% ── Packages ────────────────────────────────────────────────────────────────
+% -- Packages -----------------------------------------------------------------
 \usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.4cm, right=1.4cm]{geometry}
 \usepackage{fontenc}
 \usepackage[utf8]{inputenc}
@@ -17,22 +17,22 @@
 \usepackage{multirow}
 \usepackage{booktabs}
 
-% ── Colors ──────────────────────────────────────────────────────────────────
+% -- Colors ---------------------------------------------------------------------
 \definecolor{navyblue}{HTML}{1F4E79}
 \definecolor{darkgray}{HTML}{595959}
 \definecolor{lightgray}{HTML}{F2F2F2}
 
-% ── Hyperlinks ───────────────────────────────────────────────────────────────
+% -- Hyperlinks -------------------------------------------------------------------
 \hypersetup{
   colorlinks=true,
   urlcolor=navyblue,
   linkcolor=navyblue
 }
 
-% ── No page number ───────────────────────────────────────────────────────────
+% -- No page number -----------------------------------------------------------------
 \pagestyle{empty}
 
-% ── Section style ────────────────────────────────────────────────────────────
+% -- Section style ------------------------------------------------------------------
 \titleformat{\section}
   {\large\bfseries\color{navyblue}}
   {}{0em}
@@ -41,7 +41,7 @@
 
 \titlespacing{\section}{0pt}{10pt}{6pt}
 
-% ── List style ───────────────────────────────────────────────────────────────
+% -- List style -----------------------------------------------------------------------
 \setlist[itemize]{
   leftmargin=1.2em,
   itemsep=1pt,
@@ -50,7 +50,7 @@
   label={\textcolor{navyblue}{\textbullet}}
 }
 
-% ── Entry command: Title \hfill Meta ────────────────────────────────────────
+% -- Entry command: Title \hfill Meta ------------------------------------------------
 \newcommand{\entryhead}[2]{%
   \noindent\textbf{#1}\hfill{\small\textit{\textcolor{darkgray}{#2}}}\\[-4pt]%
 }
@@ -59,14 +59,14 @@
   {\small\textit{\textcolor{darkgray}{#1}}}\\[2pt]%
 }
 
-% ── Bold inline label ────────────────────────────────────────────────────────
+% -- Bold inline label ------------------------------------------------------------------
 \newcommand{\blabel}[1]{\textbf{#1}\ }
 
-% ═══════════════════════════════════════════════════════════════════════════
+% ===============================================================================
 \begin{document}
-% ═══════════════════════════════════════════════════════════════════════════
+% ===============================================================================
 
-% ── HEADER ──────────────────────────────────────────────────────────────────
+% -- HEADER ---------------------------------------------------------------------------
 {\LARGE\bfseries\color{navyblue} NJOME DAVID}\\[4pt]
 {\small\textcolor{darkgray}{%
   Melen, Yaoundé\quad|\quad
@@ -80,40 +80,78 @@
 \textcolor{navyblue}{\rule{\linewidth}{1.8pt}}
 \vspace{2pt}
 
-% ── PERSONAL PROFILE ────────────────────────────────────────────────────────
+% -- PERSONAL PROFILE ----------------------------------------------------------------
 \section{Personal Profile}
 
-Third-year Computer Engineering student with hands-on experience across full-stack development,
-databases, and networking, seeking an internship where I can apply and deepen my technical skills
-in a demanding, real-world environment.
+Fourth-year Computer Engineering student at the National Advanced School of Engineering Yaoundé
+(ENSPY), with a practical foundation in full-stack development, systems programming, networking,
+databases, and embedded/IoT systems, most recently deepened through a research-oriented
+internship in off-grid IoT communication. Entered ENSPY directly from anglophone secondary
+education into a majority French-language program and has maintained a steadily improving
+academic record since. Aspires to move toward Artificial Intelligence and Cloud Computing going
+forward, with a long-term interest in applying AI to healthcare and agriculture challenges in the
+African context, grounded in AI ethics. Seeking admission to deepen this technical base in a
+demanding academic environment.
 
-% ── EDUCATION ───────────────────────────────────────────────────────────────
+% -- EDUCATION -------------------------------------------------------------------------
 \section{Education}
 
-\entryhead{National Advanced School of Engineering Yaoundé — Computer Engineering}{09/2023 -- Present}
+\entryhead{National Advanced School of Engineering Yaoundé (ENSPY) - Computer Engineering}{09/2023 -- Present}
 \entrysub{Yaoundé, Cameroon}
 \begin{itemize}
-  \item \blabel{Grade:} Very Good
-  \item \blabel{Algorithmic:} Studied core data structures (trees, graphs, hash tables) and
-        algorithms including sorting, searching, and dynamic programming. Developed analytical
-        skills through complexity analysis (Big~O) to design optimised computational solutions.
-  \item \blabel{Information Systems Conception:} Modelled structured, scalable information systems
-        using Merise (MCD/MLD) and UML diagrams. Applied database design principles including
-        normalisation to produce well-architected relational schemas ready for implementation.
+  \item \blabel{Standing:} 4th year. Year 3 completed with \textbf{Mention: Très Bien}, ranked
+        \textbf{1st in class}; cumulative GPA \textbf{3.36} across 3 years (Year 3 GPA: 3.53).
+  \item \blabel{AI \& Formal Foundations:} Systèmes Formels et IA (propositional/predicate logic,
+        Prolog); Probabilités et Statistiques; Analyse Numérique (interpolation, numerical
+        integration/derivation, regression); Bases de Données (SQL).
+  \item \blabel{Systems \& Networks:} Systèmes d'Exploitation (process/memory/file management,
+        OS internals); Programmation Système (C, syscalls); Architecture des Ordinateurs
+        (logic gates, pseudo-assembly, Karnaugh maps); Introduction aux Réseaux (full theoretical
+        stack, extensive Cisco practicals, full CCNA-level competency).
+  \item \blabel{Algorithmic:} Core data structures and algorithms, complexity analysis (Big~O),
+        dynamic programming.
+  \item \blabel{Information Systems Conception:} Merise (MCD/MLD) and UML modelling, database
+        normalisation.
+  \item \blabel{Also:} Mathématiques de Base (measure theory foundations), English, Management.
 \end{itemize}
 
 \vspace{4pt}
-\entryhead{Laval Bilingual College — General Secondary Education}{09/2016 -- 07/2023}
+\entryhead{Laval Bilingual College - General Secondary Education}{09/2016 -- 07/2023}
 \entrysub{Douala, Cameroon}
 \begin{itemize}
-  \item Ranked \textbf{8th nationwide} at the GCE A-Level —
+  \item Ranked \textbf{8th nationwide} at the GCE A-Level -
         Mathematics~A, Physics~A, ICT~A, Further Maths~A, Chemistry~A
 \end{itemize}
 
-% ── PROJECTS ────────────────────────────────────────────────────────────────
+% -- EXPERIENCE -----------------------------------------------------------------------
+\section{Experience}
+
+\entryhead{Laboratoire IoT de l'ENSPY \normalfont\small- Intern}{07/2026 -- 09/2026}
+\entrysub{Yaoundé, Cameroon - team internship, reporting to Dr Anne Marie Chana}
+\begin{itemize}
+  \item Contributed to a team project building a room-monitoring device (temperature, humidity,
+        gas concentration, presence detection) with a real-time dashboard, designed to extend to
+        a multi-device whole-home monitoring system.
+  \item MVP stage: ESP32-based sensing with WiFi/HTTP to a backend database; final design target
+        fully off-grid via \textbf{LoRaWAN} on a Wyres-based board running \textbf{RIOT OS}.
+  \item \blabel{Personal ownership:} the off-grid communication pipeline end-to-end - receiving
+        sensor data through LoRaWAN gateways, running a local server, and handling data decoding,
+        parsing, and storage into a database feeding the dashboard.
+  \item \blabel{Soft skills demonstrated:} adapting to an open-ended, experimental research
+        setting where the target design evolved mid-project (from WiFi MVP to fully off-grid
+        LoRaWAN); working independently within a small research team while staying aligned with
+        the lab's broader objectives; regular reporting and technical communication with the lab
+        head; troubleshooting hardware-software integration issues without a fixed playbook;
+        and disciplined documentation, producing both an internship report and a project report.
+  \item Gained hands-on exposure to LoRa/LoRaWAN and RIOT OS for off-grid communication -
+        directly relevant to extending connectivity in rural, off-grid contexts, an active
+        research direction of the lab. First experience working within a research-team structure.
+\end{itemize}
+
+% -- PROJECTS -----------------------------------------------------------------------
 \section{University / Personal Projects}
 
-\entryhead{CROSS Authentication App \normalfont\small— Group Project (Leader)}{2025}
+\entryhead{CROSS Authentication App \normalfont\small- Group Project (Leader)}{2025}
 \begin{itemize}
   \item Platform enabling authorities to authenticate official documents using the CROSS Signature
         Scheme (Post-Quantum Cryptography).
@@ -126,16 +164,96 @@ in a demanding, real-world environment.
 \entryhead{Illustrative Printing Room \normalfont\small- Individual Project}{2025}
 \begin{itemize}
   \item OS-level simulation of a shared printing room where concurrent users with varying
-        priorities, page counts, and print types compete for limited printers — demonstrating
+        priorities, page counts, and print types compete for limited printers - demonstrating
         concurrency and synchronisation principles.
   \item \blabel{Skills applied:} Concurrency \& synchronisation, scheduling algorithm design,
         performance analysis, C~programming.
   \item Designed and benchmarked an original priority scheduling algorithm against FIFO and SJF
-        across average waiting time, turnaround time, and starvation rate — achieving measurably
+        across average waiting time, turnaround time, and starvation rate - achieving measurably
         better fairness outcomes.
 \end{itemize}
 
-% ── SKILLS ──────────────────────────────────────────────────────────────────
+\vspace{4pt}
+\entryhead{Production Management App (App Suite) \normalfont\small- Collaboration}{2025 -- 2026}
+\begin{itemize}
+  \item Built the complete frontend for a multi-tenant enterprise production-management web
+        application.
+  \item \blabel{Skills applied:} Frontend architecture, multi-tenant UI design, collaborative
+        full-stack delivery.
+  \item Delivered as part of a larger App Suite maintained and deployed by Pr Djotio Thomas for
+        African professionals; repo ownership transferred to him for ongoing maintenance.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{DIGISCHOOL \normalfont\small- Team Project (Ongoing)}{2025 -- Present}
+\begin{itemize}
+  \item Web app for managing a primary school's users, students, and parents.
+  \item \blabel{Skills applied:} React, Node.js, UML/use-case modelling, team-based agile
+        development.
+  \item Built from his own UML/use-case design work on bilingual school discipline management;
+        project ongoing.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{FairShare \normalfont\small- Hackathon Project}{2025 -- 2026}
+\begin{itemize}
+  \item Group expense-sharing application built under hackathon time-crunch conditions.
+  \item \blabel{Skills applied:} Next.js 14, Prisma, Supabase, Framer Motion, rapid prototyping
+        under time constraints.
+  \item Reached a stable, deployed version, downloadable as a Progressive Web App.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Levons-nous et Bâtissons - Survey Platform \normalfont\small- Individual Project}{2025}
+\begin{itemize}
+  \item Full custom survey web app for a Christian civic initiative targeting ENSPY students.
+  \item \blabel{Skills applied:} HTML/CSS/JS, Google Apps Script, iterative UX/visual design.
+  \item Delivered through three design iterations toward a bespoke Cameroonian visual identity,
+        with a backend writing to Google Sheets.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Gestion des Cotisations d'Organisation \normalfont\small- GI Club Collaboration}{2025}
+\begin{itemize}
+  \item Laravel backend for organisation membership and dues management.
+  \item \blabel{Skills applied:} Laravel, Sanctum authentication, API testing (Postman).
+  \item Delivered Auth and CRUD Membre modules with a 13-test Postman suite covering happy path,
+        security, and validation.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{GeoAccel \normalfont\small- Personal Utility Tool}{2025}
+\begin{itemize}
+  \item Windows desktop app computing Peak Ground Acceleration via four historical attenuation
+        laws (McGuire, Petrovski, Joyner-Boore, Sabetta-Pugliese).
+  \item \blabel{Skills applied:} Python, Tkinter, numerical methods, engineering domain modelling.
+  \item Built for a Civil Engineering peer to replace a tedious manual calculation, delivered as
+        a working standalone tool.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{RT-Comops - STOCKMAN Service \normalfont\small- Contribution}{2025}
+\begin{itemize}
+  \item Designed a stock-management service for a modular monolithic kernel using hexagonal
+        architecture.
+  \item \blabel{Skills applied:} PlantUML, domain modelling, hexagonal architecture, technical
+        writing.
+  \item Introduced a counterpartyType discriminant and a StockMovementLink aggregate to resolve
+        a modelling flaw in the existing PartyRef design.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{AI Platform Student Pricing - Market Study \normalfont\small- Individual Project}{2025}
+\begin{itemize}
+  \item Entrepreneurial market research advocating official AI-platform student pricing for
+        Cameroonian students.
+  \item \blabel{Skills applied:} Survey design, market research, ReportLab (PDF reporting),
+        Python.
+  \item Produced a full market study from 100 survey responses, targeting Anthropic as priority
+        platform and mobile-money payment as a non-negotiable requirement.
+\end{itemize}
+
+% -- SKILLS -----------------------------------------------------------------------
 \section{Skills}
 
 \vspace{2pt}
@@ -144,18 +262,21 @@ in a demanding, real-world environment.
   Programming
     & Python, Java, C/C++, HTML/CSS, JavaScript, GitHub, \LaTeX \\[3pt]
   Full-Stack Development
-    & Next.js, React, Laravel, Spring Boot, PostgreSQL, MySQL \\[3pt]
+    & Next.js, React, Node.js, Laravel, Spring Boot, PostgreSQL, MySQL \\[3pt]
+  Systems \& Networking
+    & OS internals, C syscalls, computer architecture, Cisco/CCNA-level networking \\[3pt]
+  Data, AI \& Applied Math
+    & SQL, Python (ML fundamentals), formal logic \& Prolog, numerical methods
+      (interpolation, regression), probability \& statistics \\[3pt]
   System Design \& Modelling
     & Merise, UML, database normalisation, requirements analysis \\[3pt]
   Leadership \& Project Management
     & Team coordination, sprint delivery, repeated group leadership \\[3pt]
-  Mathematical Reasoning
-    & Complexity analysis, discrete mathematics, algorithm design \\[3pt]
   Communication
     & Technical documentation, public speaking, cross-functional reporting \\
 \end{tabularx}
 
-% ── LANGUAGES ────────────────────────────────────────────────────────────────
+% -- LANGUAGES -----------------------------------------------------------------------
 \section{Languages}
 
 \vspace{2pt}
@@ -167,22 +288,22 @@ in a demanding, real-world environment.
   German   & Notions \\
 \end{tabularx}
 
-% ── CERTIFICATIONS & AWARDS ──────────────────────────────────────────────────
+% -- CERTIFICATIONS & AWARDS ------------------------------------------------------------
 \section{Certifications \& Awards}
 
 \begin{itemize}
-  \item Earned national certification in
+  \item Earned certification in
         \textbf{Microsoft Excel 2016}, placing \textbf{1st in Cameroon} and
         qualifying to represent Cameroon at the \textbf{Microsoft Office Specialist (MOS)
         World Championship} (2021 \& 2022).
-  \item \textbf{MAPLE Seminar} — NASEY OPTICA Chapter (Optica / OSA), ENSPY:\\
+  \item \textbf{MAPLE Seminar} - NASEY OPTICA Chapter (Optica / OSA), ENSPY:\\
         \textit{2\textsuperscript{nd} Edition} (Feb.--Apr. 2025): awarded \textbf{Best Student Prize},
         ranking 1\textsuperscript{st} in the summative evaluation.\\
         \textit{3\textsuperscript{rd} Edition} (Feb.--Apr. 2026): returned as
         \textbf{Assistant Trainer \& Organizer}.
 \end{itemize}
 
-% ── EXTRACURRICULAR ACTIVITIES ───────────────────────────────────────────────
+% -- EXTRACURRICULAR ACTIVITIES ------------------------------------------------------------
 \section{Extracurricular Activities}
 
 \begin{itemize}
@@ -191,11 +312,11 @@ in a demanding, real-world environment.
         and structured debates on the SDGs and broader UN development goals.
   \item Active member of the \textbf{GI Club ENSPY} project cell, contributing to collaborative
         engineering initiatives within the Computer Engineering department.
-  \item Basketball enthusiast and team-based gaming player — strong appreciation for
+  \item Basketball enthusiast and team-based gaming player - strong appreciation for
         strategy, collaboration, and competition.
 \end{itemize}
 
-% ── REFERENCES ──────────────────────────────────────────────────────────────
+% -- REFERENCES -----------------------------------------------------------------------
 \section{References}
 
 \textit{\textcolor{darkgray}{Available upon request.}}
