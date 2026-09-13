@@ -1,8 +1,8 @@
-%% CV – Njome David (Version française)
-%% Compileur : pdflatex
+%% CV - Njome David (Version Francaise - MASTER / mine d'or, pas pour export one-pager direct)
+%% Compiler : xelatex ou pdflatex
 \documentclass[10pt, a4paper]{article}
 
-% ── Packages ────────────────────────────────────────────────────────────────
+% -- Packages -----------------------------------------------------------------
 \usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.4cm, right=1.4cm]{geometry}
 \usepackage{fontenc}
 \usepackage[utf8]{inputenc}
@@ -17,22 +17,22 @@
 \usepackage{multirow}
 \usepackage{booktabs}
 
-% ── Couleurs ─────────────────────────────────────────────────────────────────
+% -- Colors ---------------------------------------------------------------------
 \definecolor{navyblue}{HTML}{1F4E79}
 \definecolor{darkgray}{HTML}{595959}
 \definecolor{lightgray}{HTML}{F2F2F2}
 
-% ── Hyperliens ───────────────────────────────────────────────────────────────
+% -- Hyperlinks -------------------------------------------------------------------
 \hypersetup{
   colorlinks=true,
   urlcolor=navyblue,
   linkcolor=navyblue
 }
 
-% ── Pas de numéro de page ────────────────────────────────────────────────────
+% -- No page number -----------------------------------------------------------------
 \pagestyle{empty}
 
-% ── Style des sections ───────────────────────────────────────────────────────
+% -- Section style ------------------------------------------------------------------
 \titleformat{\section}
   {\large\bfseries\color{navyblue}}
   {}{0em}
@@ -41,7 +41,7 @@
 
 \titlespacing{\section}{0pt}{10pt}{6pt}
 
-% ── Style des listes ─────────────────────────────────────────────────────────
+% -- List style -----------------------------------------------------------------------
 \setlist[itemize]{
   leftmargin=1.2em,
   itemsep=1pt,
@@ -50,7 +50,7 @@
   label={\textcolor{navyblue}{\textbullet}}
 }
 
-% ── Commandes personnalisées ──────────────────────────────────────────────────
+% -- Entry command: Titre \hfill Meta ------------------------------------------------
 \newcommand{\entryhead}[2]{%
   \noindent\textbf{#1}\hfill{\small\textit{\textcolor{darkgray}{#2}}}\\[-4pt]%
 }
@@ -59,13 +59,14 @@
   {\small\textit{\textcolor{darkgray}{#1}}}\\[2pt]%
 }
 
+% -- Label en gras -----------------------------------------------------------------------
 \newcommand{\blabel}[1]{\textbf{#1}\ }
 
-% ═══════════════════════════════════════════════════════════════════════════
+% ===============================================================================
 \begin{document}
-% ═══════════════════════════════════════════════════════════════════════════
+% ===============================================================================
 
-% ── EN-TÊTE ──────────────────────────────────────────────────────────────────
+% -- EN-TETE ---------------------------------------------------------------------------
 {\LARGE\bfseries\color{navyblue} NJOME DAVID}\\[4pt]
 {\small\textcolor{darkgray}{%
   Melen, Yaoundé\quad|\quad
@@ -79,125 +80,252 @@
 \textcolor{navyblue}{\rule{\linewidth}{1.8pt}}
 \vspace{2pt}
 
-% ── PROFIL PERSONNEL ─────────────────────────────────────────────────────────
+% -- PROFIL PERSONNEL -----------------------------------------------------------------
 \section{Profil Personnel}
 
-Étudiant en troisième année de Génie Informatique, avec une expérience pratique en développement
-full-stack, bases de données et réseaux, à la recherche d'un stage afin d'approfondir et d'appliquer
-mes compétences techniques dans un environnement professionnel exigeant.
+Étudiant en quatrième année de Génie Informatique à l'École Nationale Supérieure Polytechnique
+de Yaoundé (ENSPY), avec une base pratique en développement full-stack, machine learning et IA, programmation système,
+réseaux et systèmes embarqués/IoT, renforcée récemment par un stage à
+orientation recherche sur la communication IoT hors-réseau. Entré à l'ENSPY directement depuis
+un enseignement secondaire anglophone vers un cursus majoritairement francophone, avec une
+progression académique constante depuis. Aspire à évoluer vers l'Intelligence Artificielle et le
+Cloud Computing, avec un intérêt à long terme pour l'application de l'IA aux enjeux de santé et
+d'agriculture en contexte africain, dans une démarche attentive à l'éthique de l'IA. Candidat
+pour approfondir cette base technique dans un cadre académique exigeant.
 
-% ── FORMATION ────────────────────────────────────────────────────────────────
+% -- FORMATION -------------------------------------------------------------------------
 \section{Formation}
 
-\entryhead{École Nationale Supérieure Polytechnique de Yaoundé — Génie Informatique}{09/2023 -- Présent}
+\entryhead{École Nationale Supérieure Polytechnique de Yaoundé (ENSPY) - Génie Informatique}{09/2023 -- Présent}
 \entrysub{Yaoundé, Cameroun}
 \begin{itemize}
-  \item \blabel{Mention :} Très Bien
-  \item \blabel{Algorithmique :} Étude des structures de données fondamentales (arbres, graphes,
-        tables de hachage) et des algorithmes de tri, de recherche et de programmation dynamique.
-        Développement de compétences analytiques à travers l'analyse de complexité (notation Grand~O)
-        pour concevoir des solutions informatiques optimisées.
-  \item \blabel{Conception des Systèmes d'Information :} Modélisation de systèmes d'information
-        structurés et évolutifs à l'aide de la méthode Merise (MCD/MLD) et des diagrammes UML.
-        Application des principes de conception de bases de données, dont la normalisation, pour
-        produire des schémas relationnels bien architecturés et prêts à l'implémentation.
+  \item \blabel{Niveau :} 4\textsuperscript{e} année. 3\textsuperscript{e} année validée avec
+        \textbf{Mention Très Bien}, 1\textsuperscript{er} de la promotion ; MGP cumulée
+        \textbf{3,36} sur 3 ans (MGP niveau 3~: 3,53).
+  \item \blabel{IA et Fondements Formels :} Systèmes Formels et IA (logique des propositions et
+        prédicats, Prolog) ; Probabilités et Statistiques ; Analyse Numérique (interpolation
+        polynomiale, intégration/dérivation numérique, régression) ; Bases de Données (SQL).
+  \item \blabel{Systèmes et Réseaux :} Systèmes d'Exploitation (gestion des processus, de la
+        mémoire et des fichiers) ; Programmation Système (C, appels système) ; Architecture des
+        Ordinateurs (portes logiques, pseudo-assembleur, tableaux de Karnaugh) ; Introduction aux
+        Réseaux (approche théorique complète, nombreux travaux pratiques Cisco, niveau CCNA
+        complet).
+  \item \blabel{Algorithmique :} Structures de données et algorithmes fondamentaux, analyse de
+        complexité (Grand~O), programmation dynamique.
+  \item \blabel{Conception des Systèmes d'Information :} Modélisation Merise (MCD/MLD) et UML,
+        normalisation de bases de données.
+  \item \blabel{Également :} Mathématiques de Base (fondements de la théorie de la mesure),
+        Anglais, Management.
 \end{itemize}
 
 \vspace{4pt}
-\entryhead{Collège Bilingue de Laval — Enseignement Secondaire Général}{09/2016 -- 07/2023}
+\entryhead{Collège Bilingue de Laval - Enseignement Secondaire Général}{09/2016 -- 07/2023}
 \entrysub{Douala, Cameroun}
 \begin{itemize}
-  \item Classé \textbf{8\textsuperscript{e} à l'échelle nationale} au GCE A-Level —
+  \item Classé \textbf{8\textsuperscript{e} à l'échelle nationale} au GCE A-Level -
         Mathematics~A, Physics~A, ICT~A, Further Maths~A, Chemistry~A
 \end{itemize}
 
-% ── PROJETS ──────────────────────────────────────────────────────────────────
+% -- EXPERIENCE ----------------------------------------------------------------------
+\section{Expérience}
+
+\entryhead{Laboratoire IoT de l'ENSPY \normalfont\small- Stagiaire}{07/2026 -- 09/2026}
+\entrysub{Yaoundé, Cameroun - stage en équipe, sous la responsabilité de Dr Anne Marie Chana (Chef de laboratoire)}
+\begin{itemize}
+  \item Contribution à un projet d'équipe visant un dispositif de surveillance de pièce
+        (température, humidité, concentration de gaz, détection de présence) avec tableau de
+        bord temps réel, conçu pour évoluer vers un système multi-dispositifs couvrant un
+        logement entier.
+  \item Phase MVP : capteurs sur ESP32 avec liaison WiFi/HTTP vers une base de données ;
+        objectif final : fonctionnement entièrement hors-réseau via \textbf{LoRaWAN} sur une
+        carte Wyres sous \textbf{RIOT OS}.
+  \item \blabel{Responsabilité personnelle :} l'ensemble de la chaîne de communication
+        hors-réseau - réception des données via les passerelles LoRaWAN, exploitation d'un
+        serveur local, décodage, parsing et stockage des données en base pour alimenter le
+        tableau de bord.
+  \item \blabel{Savoir-être démontré :} adaptation à un cadre de recherche ouvert et
+        expérimental, dont l'objectif technique a évolué en cours de projet (du MVP WiFi vers
+        une solution entièrement hors-réseau en LoRaWAN) ; autonomie de travail au sein d'une
+        petite équipe de recherche tout en restant aligné avec les objectifs plus larges du
+        laboratoire ; communication technique régulière avec la chef de laboratoire ; résolution
+        de problèmes d'intégration matériel-logiciel sans procédure toute faite ; rigueur de
+        documentation, avec la production d'un rapport de stage et d'un rapport de projet.
+  \item Exposition concrète à LoRa/LoRaWAN et RIOT OS pour la communication hors-réseau -
+        directement pertinent pour étendre la connectivité en zones rurales, un axe de
+        recherche actif du laboratoire. Première expérience de travail en structure de
+        recherche.
+\end{itemize}
+
+% -- PROJETS ----------------------------------------------------------------------
 \section{Projets Universitaires / Personnels}
 
-\entryhead{Application CROSS Authentication \normalfont\small— Projet de Groupe (Chef de projet)}{2025}
+\entryhead{Application CROSS Authentication \normalfont\small- Projet de Groupe (Chef de projet)}{2025}
 \begin{itemize}
-  \item Plateforme permettant aux autorités d'authentifier des documents officiels à l'aide du
-        schéma de signature CROSS (Cryptographie Post-Quantique).
+  \item Plateforme d'authentification de documents officiels par cryptographie post-quantique
+        (schéma de signature CROSS).
   \item \blabel{Compétences mobilisées :} Gestion de projet, documentation technique, Python.
-  \item Pilotage d'une équipe de 6 personnes pour concevoir et livrer une plateforme
-        d'authentification post-quantique fonctionnelle en 7 semaines.
+  \item Pilotage d'une équipe de 6 personnes sur 7 semaines, de la conception à la livraison
+        d'une plateforme post-quantique pleinement fonctionnelle.
 \end{itemize}
 
 \vspace{4pt}
-\entryhead{Salle d'Impression Illustrée \normalfont\small— Projet Individuel}{2025}
+\entryhead{Salle d'Impression Illustrée \normalfont\small- Projet Individuel}{2025}
 \begin{itemize}
-  \item Simulation au niveau système d'exploitation d'une salle d'impression partagée, où des
-        utilisateurs concurrents avec des priorités, nombres de pages et types d'impression variés
-        se disputent des imprimantes en nombre limité — illustrant les principes de concurrence
-        et de synchronisation.
-  \item \blabel{Compétences mobilisées :} Concurrence et synchronisation, conception d'algorithmes
-        d'ordonnancement, analyse de performances, programmation en~C.
-  \item Conception et évaluation comparative d'un algorithme d'ordonnancement par priorité original
-        face aux algorithmes FIFO et SJF, selon des métriques de temps d'attente moyen, de temps
-        de rotation et de taux de famine — avec des résultats d'équité mesurables supérieurs.
+  \item Simulation système d'une salle d'impression concurrente où des utilisateurs aux
+        priorités, volumes et types d'impression variés se disputent des imprimantes limitées -
+        illustrant les principes de concurrence et de synchronisation.
+  \item \blabel{Compétences mobilisées :} Concurrence et synchronisation, conception
+        d'algorithmes d'ordonnancement, analyse de performance, programmation C.
+  \item Conception et comparaison expérimentale d'un ordonnanceur par priorité original face
+        aux algorithmes FIFO et SJF - avec de meilleurs résultats d'équité, mesurés sur le
+        temps d'attente, le temps de rotation et le taux de famine.
 \end{itemize}
 
-% ── COMPÉTENCES ──────────────────────────────────────────────────────────────
+\vspace{4pt}
+\entryhead{Application de Gestion de Production (App Suite) \normalfont\small- Collaboration}{2025 -- 2026}
+\begin{itemize}
+  \item Réalisation du frontend complet d'une application multi-tenant de gestion de production
+        pour entreprises.
+  \item \blabel{Compétences mobilisées :} Architecture frontend, conception d'interfaces
+        multi-tenant, développement full-stack collaboratif.
+  \item Intégrée à une suite applicative plus large maintenue et déployée par le Pr Djotio
+        Thomas pour des professionnels africains ; propriété du dépôt transférée à ce dernier
+        pour la maintenance continue.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{DIGISCHOOL \normalfont\small- Projet d'Équipe (En cours)}{2025 -- Présent}
+\begin{itemize}
+  \item Application web de gestion d'école primaire - utilisateurs, élèves et parents.
+  \item \blabel{Compétences mobilisées :} React, Node.js, modélisation UML/cas d'utilisation,
+        développement agile en équipe.
+  \item Construite à partir de son propre travail de modélisation UML sur la gestion de la
+        discipline scolaire bilingue ; projet en cours.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{FairShare \normalfont\small- Projet de Hackathon}{2025 -- 2026}
+\begin{itemize}
+  \item Application de partage de dépenses réalisée en conditions de hackathon.
+  \item \blabel{Compétences mobilisées :} Next.js 14, Prisma, Supabase, Framer Motion,
+        prototypage rapide sous contrainte de temps.
+  \item Version stable, déployée et téléchargeable en tant que PWA (Progressive Web App).
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Levons-nous et Bâtissons - Plateforme de Sondage \normalfont\small- Projet Individuel}{2025}
+\begin{itemize}
+  \item Application web de sondage sur mesure pour une initiative civique chrétienne destinée
+        aux étudiants de l'ENSPY.
+  \item \blabel{Compétences mobilisées :} HTML/CSS/JS, Google Apps Script, design UX itératif.
+  \item Réalisée à travers trois itérations de design vers une identité visuelle camerounaise
+        sur mesure, avec un backend écrivant vers Google Sheets.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Gestion des Cotisations d'Organisation \normalfont\small- Collaboration Club GI}{2025}
+\begin{itemize}
+  \item Backend Laravel pour la gestion des adhésions et cotisations d'une organisation.
+  \item \blabel{Compétences mobilisées :} Laravel, authentification Sanctum, tests d'API
+        (Postman).
+  \item Modules Auth et CRUD Membre livrés avec une suite de 13 tests Postman couvrant le cas
+        nominal, la sécurité et la validation.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{GeoAccel \normalfont\small- Outil Personnel}{2025}
+\begin{itemize}
+  \item Application de bureau Windows calculant l'accélération maximale du sol via quatre lois
+        d'atténuation historiques (McGuire, Petrovski, Joyner-Boore, Sabetta-Pugliese).
+  \item \blabel{Compétences mobilisées :} Python, Tkinter, méthodes numériques, modélisation de
+        domaine technique.
+  \item Réalisée pour un camarade de Génie Civil afin de remplacer un calcul manuel fastidieux,
+        livrée comme outil autonome fonctionnel.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{RT-Comops - Service STOCKMAN \normalfont\small- Contribution}{2025}
+\begin{itemize}
+  \item Conception d'un service de gestion de stock pour un noyau monolithique modulaire en
+        architecture hexagonale.
+  \item \blabel{Compétences mobilisées :} PlantUML, modélisation de domaine, architecture
+        hexagonale, rédaction technique.
+  \item Introduction d'un discriminant counterpartyType et d'un agrégat StockMovementLink pour
+        corriger un défaut de modélisation dans la conception PartyRef existante.
+\end{itemize}
+
+\vspace{4pt}
+\entryhead{Tarification Étudiante pour Plateformes IA - Étude de Marché \normalfont\small- Projet Individuel}{2025}
+\begin{itemize}
+  \item Étude de marché entrepreneuriale plaidant pour une tarification étudiante officielle
+        des plateformes IA au Cameroun.
+  \item \blabel{Compétences mobilisées :} Conception de sondages, étude de marché, ReportLab
+        (génération de PDF), Python.
+  \item Étude complète produite à partir de 100 réponses à un sondage, ciblant Anthropic comme
+        plateforme prioritaire et le paiement mobile-money comme exigence non négociable.
+\end{itemize}
+
+% -- COMPETENCES ----------------------------------------------------------------
 \section{Compétences}
 
 \vspace{2pt}
 \noindent
-\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{5.2cm} X @{}}
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{4.8cm} X @{}}
   Programmation
     & Python, Java, C/C++, HTML/CSS, JavaScript, GitHub, \LaTeX \\[3pt]
   Développement Full-Stack
-    & Next.js, React, Laravel, Spring Boot, PostgreSQL, MySQL \\[3pt]
-  Conception de Systèmes
+    & Next.js, React, Node.js, Laravel, Spring Boot, PostgreSQL, MySQL \\[3pt]
+  Systèmes \& Réseaux
+    & Fonctionnement OS, appels système en C, architecture des ordinateurs, réseaux Cisco/CCNA \\[3pt]
+  Données, IA \& Maths Appliquées
+    & SQL, Python (Pandas, bases du Machine Learning), logique formelle et Prolog, méthodes
+      numériques (interpolation, régression), probabilités et statistiques \\[3pt]
+  Conception des Systèmes
     & Merise, UML, normalisation de bases de données, analyse des besoins \\[3pt]
   Leadership \& Gestion de Projet
     & Coordination d'équipe, livraison par sprints, chef de groupe récurrent \\[3pt]
-  Raisonnement Mathématique
-    & Analyse de complexité, mathématiques discrètes, conception d'algorithmes \\[3pt]
   Communication
-    & Documentation technique, prise de parole en public, reporting transversal \\
+    & Documentation technique, prise de parole en public, reporting transverse \\
 \end{tabularx}
 
-% ── LANGUES ──────────────────────────────────────────────────────────────────
+% -- LANGUES ----------------------------------------------------------------
 \section{Langues}
 
 \vspace{2pt}
 \noindent
-\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{5.2cm} X @{}}
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{4.8cm} X @{}}
   Français  & Courant \\[3pt]
   Anglais   & Courant \\[3pt]
   Espagnol  & Notions \\[3pt]
   Allemand  & Notions \\
 \end{tabularx}
 
-% ── CERTIFICATIONS ET DISTINCTIONS ───────────────────────────────────────────
+% -- CERTIFICATIONS ET DISTINCTIONS ----------------------------------------------
 \section{Certifications et Distinctions}
 
 \begin{itemize}
-  \item Certification nationale en \textbf{Microsoft Excel 2016}, classé \textbf{1\textsuperscript{er}
-        au Cameroun} et qualifié pour représenter le pays au \textbf{Microsoft Office Specialist (MOS)
-        World Championship} (2021 et 2022).
-  \item \textbf{Séminaire MAPLE} — NASEY OPTICA Chapter (Optica / OSA), ENSPY :\\
-        \textit{2\textsuperscript{e} Édition} (Fév.--Avr. 2025) : \textbf{Prix du Meilleur Étudiant},
-        classé 1\textsuperscript{er} à l'évaluation sommative.\\
-        \textit{3\textsuperscript{e} Édition} (Fév.--Avr. 2026) : retour en tant que
-        \textbf{Formateur Assistant et Organisateur}.
+  \item Certification en \textbf{Microsoft Excel 2016}, classé \textbf{1\textsuperscript{er}
+        au Cameroun} et qualifié pour représenter le pays au \textbf{Microsoft Office Specialist
+        (MOS) World Championship} (2021 et 2022).
+  \item \textbf{Séminaire MAPLE} - NASEY OPTICA Chapter (Optica / OSA), ENSPY :\\
+        \textit{2\textsuperscript{e} Éd.} (fév.--avr. 2025) : \textbf{Prix du Meilleur Étudiant}.\\
+        \textit{3\textsuperscript{e} Éd.} (fév.--avr. 2026) : \textbf{Formateur Assistant et
+        Organisateur}.
 \end{itemize}
 
-% ── ACTIVITÉS PARASCOLAIRES ───────────────────────────────────────────────────
-\section{Activités Parascolaires}
+% -- ACTIVITES EXTRASCOLAIRES ----------------------------------------------------
+\section{Activités Extrascolaires}
 
 \begin{itemize}
-  \item Titulaire du titre de \textbf{Député Junior du Cameroun auprès des Nations Unies},
-        représentant la jeunesse nationale à travers des engagements diplomatiques, des prises
-        de parole en public, des entretiens avec des personnalités politiques et des débats
-        structurés sur les ODD et les objectifs de l'ONU.
-  \item Membre actif de la cellule projets du \textbf{Club GI ENSPY}, contribuant à des
-        initiatives d'ingénierie collaboratives au sein du département Génie Informatique.
-  \item Passionné de basketball et joueur de jeux vidéo en équipe — fort attrait pour la stratégie,
-        la collaboration et la compétition.
+  \item \textbf{Député Junior du Cameroun auprès des Nations Unies} - représentation de la
+        jeunesse nationale à travers des engagements diplomatiques, prises de parole en public
+        et débats structurés sur les ODD.
+  \item Membre actif de la cellule projets du \textbf{Club GI ENSPY}.
+  \item Passionné de basketball et joueur de jeux vidéo en équipe - sens de la stratégie,
+        de la collaboration et de la compétition.
 \end{itemize}
 
-% ── RÉFÉRENCES ───────────────────────────────────────────────────────────────
+% -- REFERENCES ----------------------------------------------------------------
 \section{Références}
 
 \textit{\textcolor{darkgray}{Disponibles sur demande.}}
